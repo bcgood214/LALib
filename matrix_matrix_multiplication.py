@@ -1,3 +1,11 @@
+# Added after mult
+def row_col_multiplication(x1, x2):
+    val = 0
+    for i in range(len(x1)):
+        val += x1[i]*x2[i]
+    
+    return val
+
 def mult(a, b):
     if len(a[0]) != len(b):
         return False

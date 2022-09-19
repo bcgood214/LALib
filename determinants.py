@@ -27,6 +27,16 @@ def det(mat):
             sign *= -1
         return val
 
+def mult(mat, scalar):
+    new_mat = []
+    for i in range(len(mat)):
+        new_row = []
+        for j in range(len(mat)):
+            new_row.append(mat[i][j] * scalar)
+        new_mat.append(new_row)
+    
+    return new_mat
+
 if __name__ == "__main__":
     m = [
         [1, 2, 3, 4],
@@ -35,4 +45,7 @@ if __name__ == "__main__":
         [2, 3, 0, 0]
     ]
 
-    print(det(m))
+    m2 = [
+        [4, -2],
+        [-3, 1]
+    ]

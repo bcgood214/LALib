@@ -53,13 +53,12 @@ if __name__ == "__main__":
         [-4, 1, -3, -8]
     ]
     m2 = [
-        [1, -2, 4],
-        [1, 0, 0],
-        [1, 2, 4]
+        [1, -2, 1],
+        [0, 2, -8],
+        [5, 0, -5]
     ]
 
     m2 = gauss_elimination(m2)
-    res = forward_sub(m2, [-1, 2, 3])
+    res = forward_sub(m2, [0, 8, 10])
     print(m2)
     print(res)
-    print(find_vals(m2, res))
